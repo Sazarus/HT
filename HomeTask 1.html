@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var num = prompt('Введите четырех значное число');
+        let str = String(num);
+        if(num % 2 == 0){
+            let sum = 1;
+            for(let i = 0; str.length > i; i++){
+                sum *= Number(str[i]);
+
+            }
+            console.log('Число четное, и произведение всех его элементов = ' + sum);
+        }else{
+            let sum = 0;
+            for(let i = 0; str.length > i; i++){
+                sum += Number(str[i]);
+
+            }
+            console.log('Число нечетное, и сумма всех его элементов = ' + sum);
+        }*/
+        
+        var salary = prompt("Размер вашей зарплаты");
+        let salary_tax = 0;
+        if(salary <= 6000){
+            salary_tax = salary - ((salary/100)* 10);
+            document.write("Ваша зарплата - налог = " + salary_tax)
+        }if(salary > 6000 && salary <= 10000){
+            salary_tax = salary - ((salary/100)* 15);
+            document.write("Ваша зарплата - налог = " + salary_tax)
+        }if(salary > 10000 && salary <= 15000){
+            salary_tax = salary - ((salary/100)* 17.5);
+            document.write("Ваша зарплата - налог = " + salary_tax)
+        }if(salary > 15000){
+            salary_tax = salary - ((salary/100)* 20);
+            document.write("Ваша зарплата - налог = " + salary_tax)
+        }
+
+    </script>
+</body>
+</html>
